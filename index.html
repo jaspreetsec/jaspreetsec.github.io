@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jaspreet Singh</title>
+    <meta name="description" content="Jaspreet Singh — cybersecurity learner and aspiring red team professional based in Winnipeg. Self-taught security practitioner active on TryHackMe and HackTheBox.">
+    <meta property="og:title" content="Jaspreet Singh — Cybersecurity Portfolio">
+    <meta property="og:description" content="Cybersecurity learner and aspiring red team professional. Active on TryHackMe and HackTheBox, pursuing eJPT → PNPT → OSCP.">
+    <meta property="og:url" content="https://jjaspreetsingh.com">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://jjaspreetsingh.com">
+    <title>Jaspreet Singh — Cybersecurity Portfolio</title>
     <link rel="icon" type="image/jpeg" href="favicon.jpg">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -22,10 +28,10 @@
     <main>
         <section class="hero">
             <div class="container">
-                <div class="hero-content">
+                <div class="hero-content animate-hidden">
                     <h1 class="hero-title">Jaspreet Singh</h1>
-                    <h2 class="hero-subtitle">Red Team Aspirant | Ethical Hacker | Self-Taught Pentester</h2>
-                    <p class="hero-description">Analytical INTP thinker passionate about ethical hacking, network security, and offensive security. Self-taught in Linux, penetration testing, and security tools. Aspiring red team professional.</p>
+                    <h2 class="hero-subtitle">Cybersecurity Learner | Aspiring Red Team | Jr. IT Analyst</h2>
+                    <p class="hero-description">Self-taught security practitioner from a small village in Punjab. Started by cracking games and rooting Android phones via Termux. After a commerce degree at RRC Polytech, I pivoted hard into cybersecurity. Now actively practicing on TryHackMe and HackTheBox, working toward eJPT → PNPT → OSCP.</p>
 
                     <div class="hero-buttons">
                         <a href="#projects" class="btn btn-primary">View Projects</a>
@@ -35,6 +41,8 @@
                     <div class="social-links">
                         <a href="https://github.com/jjaspreetsingh" target="_blank" class="social-link">GitHub</a>
                         <a href="https://linkedin.com/in/jjaspreetsingh" target="_blank" class="social-link">LinkedIn</a>
+                        <a href="https://x.com/jjaspreetsinghX" target="_blank" class="social-link">X</a>
+                        <a href="https://tryhackme.com/p/jjaspreetsingh" target="_blank" class="social-link">TryHackMe</a>
                     </div>
                 </div>
             </div>
@@ -43,7 +51,7 @@
         <section id="skills" class="skills">
             <div class="container">
                 <h2>Skills & Tools</h2>
-                <div class="skills-badges">
+                <div class="skills-badges animate-hidden">
                     <span class="skill-badge">Kali Linux</span>
                     <span class="skill-badge">Burp Suite</span>
                     <span class="skill-badge">Metasploit</span>
@@ -69,84 +77,70 @@
 
         <section id="projects" class="projects">
             <div class="container">
-                <h2>Featured Projects & CTF Writeups</h2>
-                <p class="projects-intro">A collection of security research, automation tools, and hands-on cybersecurity projects demonstrating practical skills in ethical hacking, network analysis, and system security.</p>
+                <h2>My Security Journey</h2>
+                <p class="projects-intro">Real projects, labs, and hands-on learning from my cybersecurity practice. No placeholder content—these are actual things I've built and used.</p>
 
                 <div class="projects-grid">
-                    <div class="project-card">
-                        <h3>Network Security Analysis & Packet Inspection</h3>
+                    <div class="project-card animate-hidden">
+                        <h3>TryHackMe Progress</h3>
                         <div class="project-content">
-                            <p class="project-description">Comprehensive network reconnaissance and security analysis project using Wireshark and custom Bash scripts. This project focuses on understanding network protocols, identifying security vulnerabilities, and analyzing network traffic patterns.</p>
+                            <p class="project-description">Active learning on TryHackMe, completing rooms across multiple learning paths. I document my solutions and notes for completed challenges, focusing on practical penetration testing skills.</p>
 
-                            <h4>Key Features:</h4>
+                            <h4>Current Progress:</h4>
                             <ul class="project-features">
-                                <li>Deep packet inspection and protocol analysis using Wireshark</li>
-                                <li>Custom scripts for automated network traffic capture and filtering</li>
-                                <li>Identification of suspicious network behavior and potential security threats</li>
-                                <li>Analysis of network protocols (TCP/IP, HTTP, HTTPS, DNS)</li>
-                                <li>Traffic pattern recognition and anomaly detection</li>
-                                <li>Network mapping and reconnaissance techniques</li>
+                                <li>Jr Penetration Tester path (in progress)</li>
+                                <li>Pre-Security path (completed)</li>
+                                <li>20+ rooms completed across Web, Network, and OS categories</li>
+                                <li>Regular practice in CTF challenges and vulnerability labs</li>
                             </ul>
 
-                            <h4>Tools & Technologies:</h4>
+                            <h4>View My Profile:</h4>
                             <div class="tech-stack">
-                                <span class="tech">Wireshark</span>
-                                <span class="tech">Bash Scripting</span>
-                                <span class="tech">Linux</span>
-                                <span class="tech">Network Protocols</span>
-                                <span class="tech">Packet Analysis</span>
+                                <a href="https://tryhackme.com/p/jjaspreetsingh" target="_blank" class="tech" style="text-decoration: none; color: inherit;">
+                                    🎯 TryHackMe Profile
+                                </a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="project-card">
-                        <h3>Penetration Testing Automation Framework</h3>
+                    <div class="project-card animate-hidden">
+                        <h3>Self-Hosted Lab Infrastructure</h3>
                         <div class="project-content">
-                            <p class="project-description">Custom automation framework for penetration testing and vulnerability assessment. Built using Bash and Python to streamline security testing workflows, automate reconnaissance, and facilitate ethical hacking exploration.</p>
+                            <p class="project-description">Personal homelabs running on a VPS and local machines. Built for learning, testing, and hosting security tools in a controlled environment. Uses Docker Compose for orchestration and Tailscale for secure remote access.</p>
 
-                            <h4>Key Features:</h4>
+                            <h4>Stack & Services:</h4>
                             <ul class="project-features">
-                                <li>Automated reconnaissance and information gathering scripts</li>
-                                <li>Integration with Metasploit framework for exploitation testing</li>
-                                <li>Vulnerability scanning and assessment automation</li>
-                                <li>Custom payload generation and delivery mechanisms</li>
-                                <li>Report generation for security findings</li>
-                                <li>Modular architecture for easy extension and customization</li>
+                                <li>Open WebUI + OpenRouter for AI playground experiments</li>
+                                <li>VPS hosting multiple security tools and services</li>
+                                <li>Tailscale mesh network connecting lab machines securely</li>
+                                <li>Docker Compose for reproducible service deployment</li>
+                                <li>Monitoring and uptime tracking with Uptime Kuma</li>
                             </ul>
 
-                            <h4>Tools & Technologies:</h4>
+                            <h4>Status:</h4>
                             <div class="tech-stack">
-                                <span class="tech">Bash</span>
-                                <span class="tech">Python</span>
-                                <span class="tech">Metasploit</span>
-                                <span class="tech">ngrok</span>
-                                <span class="tech">Security Testing</span>
+                                <span class="tech">🖥️ Personal Lab — no public repo</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="project-card">
-                        <h3>Capture The Flag (CTF) Challenges</h3>
+                    <div class="project-card animate-hidden">
+                        <h3>Home Lab C2 Infrastructure</h3>
                         <div class="project-content">
-                            <p class="project-description">Active participation in Capture-the-Flag competitions and ongoing security research. This ongoing project involves solving security challenges, researching vulnerabilities, and developing offensive security techniques in controlled, ethical environments.</p>
+                            <p class="project-description">Red team lab built from an old laptop repurposed as an attack machine. Running Sliver C2 (Command & Control) server with WireGuard VPN for secure remote access. Used for practicing post-exploitation, lateral movement, and C2 operations in isolated environment.</p>
 
-                            <h4>Key Activities:</h4>
+                            <h4>Architecture:</h4>
                             <ul class="project-features">
-                                <li>Regular participation in online CTF competitions</li>
-                                <li>Web application security challenges and exploitation</li>
-                                <li>Cryptography and steganography problem solving</li>
-                                <li>Reverse engineering and binary analysis</li>
-                                <li>Vulnerability research and proof-of-concept development</li>
-                                <li>Documentation of techniques and methodologies</li>
+                                <li>Sliver C2 server with implant generation and management</li>
+                                <li>WireGuard VPN for encrypted team server access</li>
+                                <li>Uptime Kuma for service monitoring and alerts</li>
+                                <li>Isolated network to prevent accidental exposure</li>
+                                <li>Documented setup procedures and security hardening</li>
                             </ul>
 
-                            <h4>Tools & Technologies:</h4>
+                            <h4>Status:</h4>
                             <div class="tech-stack">
-                                <span class="tech">CTF Platforms</span>
-                                <span class="tech">Ethical Hacking</span>
-                                <span class="tech">Security Research</span>
-                                <span class="tech">Vulnerability Assessment</span>
-                                <span class="tech">Offensive Security</span>
+                                <span class="tech">🔴 Personal Lab — no public repo</span>
                             </div>
                         </div>
                     </div>
@@ -157,25 +151,25 @@
         <section id="bio" class="bio">
             <div class="container">
                 <h2>About Me</h2>
-                <div class="bio-content">
+                <div class="bio-content animate-hidden">
                     <div class="terminal-prompt">
                         <span class="prompt-symbol">$</span>
                         <span class="prompt-text">whoami</span>
                     </div>
                     <div class="bio-text">
-                        <p>As an INTP analytical thinker, I'm driven by curiosity and a passion for understanding how systems work—and how they can be secured. My journey in cybersecurity began through self-directed exploration of Linux systems, network tools, and ethical hacking concepts. I'm currently pursuing my goal of becoming a red team professional, focusing on offensive security and penetration testing.</p>
+                        <p>I'm Jaspreet Singh, a 22-year-old cybersecurity learner from Winnipeg, Manitoba. Originally from a small village in Punjab, India, I taught myself computers by cracking games and rooting Android phones using Termux. After completing a Commerce degree at RRC Polytech (which wasn't my choice), I made a hard pivot into cybersecurity—the field I'm actually passionate about.</p>
 
                         <div class="terminal-prompt">
                             <span class="prompt-symbol">$</span>
                             <span class="prompt-text">ls -la skills/</span>
                         </div>
-                        <p>Technical Skills: Linux & Command Line, Network Security, Scripting & Automation, Security Tools, System Analysis, Data Analysis</p>
+                        <p> Kali Linux • Burp Suite • Metasploit • Nmap • Wireshark • Python • Bash • Docker • VPS Administration • Tailscale • Networking Fundamentals (TCP/IP, DNS, DHCP) • DC204 (Winnipeg DEF CON chapter)</p>
 
                         <div class="terminal-prompt">
                             <span class="prompt-symbol">$</span>
                             <span class="prompt-text">cat goals.txt</span>
                         </div>
-                        <p>My dream is to work in cybersecurity as a red team professional, focusing on ethical hacking, penetration testing, and offensive security.</p>
+                        <p>Current path: eJPT → PNPT → OSCP. I'm building my skills through hands-on practice on TryHackMe and HackTheBox, setting up self-hosted labs, and documenting my journey. My goal is to work as a red team professional, conducting ethical penetration tests and helping organizations improve their security posture.</p>
                     </div>
                 </div>
             </div>
@@ -184,7 +178,7 @@
         <section id="contact" class="contact">
             <div class="container">
                 <h2>Get In Touch</h2>
-                <div class="contact-content">
+                <div class="contact-content animate-hidden">
                     <div class="contact-info">
                         <h3>Let's Connect</h3>
                         <p>I'm always open to discussing new opportunities and collaborations.</p>
@@ -224,5 +218,13 @@
     <button id="scroll-top" aria-label="Scroll to top">↑</button>
 
     <script src="script.js"></script>
+    <noscript>
+        <style>
+            .animate-hidden {
+                opacity: 1 !important;
+                transform: none !important;
+            }
+        </style>
+    </noscript>
 </body>
 </html>

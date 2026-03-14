@@ -26,7 +26,6 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    text-transform: lowercase;
     position: relative;
     overflow-x: hidden;
 }
@@ -199,7 +198,7 @@ nav {
 
 .hero-subtitle {
     font-size: 1.8rem;
-    color: var(--secondary-color);
+    color: var(--accent-color);
     margin-bottom: 2rem;
     font-weight: 600;
     letter-spacing: 0.5px;
@@ -209,7 +208,7 @@ nav {
     font-size: 1.2rem;
     max-width: 600px;
     margin: 0 auto 3rem;
-    color: var(--secondary-color);
+    color: #aaaaaa;
     line-height: 1.8;
 }
 
@@ -657,6 +656,20 @@ footer p {
     transform: translateY(-5px);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
     background: linear-gradient(135deg, var(--primary-color), #991b1b);
+}
+
+/* Animation on scroll - default visible for no-JS users */
+.animate-hidden {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.hero-content,
+.project-card,
+.bio-content,
+.contact-content,
+.skills-badges {
+    transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
 /* Responsive */

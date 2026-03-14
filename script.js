@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Update active nav link on scroll
     window.addEventListener('scroll', updateActiveNavLink);
 
-    // Intersection Observer for animations
+    // Intersection Observer for animations - uses CSS class
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
@@ -65,18 +65,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const observer = new IntersectionObserver(function(entries) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
+                entry.target.classList.remove('animate-hidden');
             }
         });
     }, observerOptions);
 
     // Observe elements for animation
-    const animatables = document.querySelectorAll('.hero-content, .project-card, .bio-content, .contact-content, .skills-badges');
+    const animatables = document.querySelectorAll('.animate-hidden');
     animatables.forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(20px)';
-        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         observer.observe(el);
     });
 });

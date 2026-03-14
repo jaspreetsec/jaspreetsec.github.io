@@ -1,92 +1,94 @@
-# Jaspreet Singh // portfolio website
+# Jaspreet Singh — Cybersecurity Portfolio
 
-A modern, responsive portfolio website showcasing my analytical skills, technical projects, and professional experience. Built with vanilla HTML, CSS, and JavaScript.
+Single-page portfolio website for cybersecurity professional Jaspreet Singh. Built with vanilla HTML, CSS, and JavaScript. Deployed via GitHub Pages.
 
 🌐 **Live Site**: [https://jjaspreetsingh.com](https://jjaspreetsingh.com)
 
-## ✨ Features
+## About This Site
 
-- 🎨 **Light/Dark Theme Toggle** - Persistent theme preference with smooth transitions
-- 📱 **Fully Responsive Design** - Mobile-first approach with hamburger menu
-- 🎯 **Smooth Animations** - Intersection Observer API for scroll-triggered animations
-- ⬆️ **Scroll to Top Button** - Appears after scrolling down
-- 🎭 **Interactive Elements** - Hover effects and transitions throughout
-- ♿ **Accessible** - ARIA labels and semantic HTML
-- ⚡ **Fast Loading** - No external dependencies, pure vanilla JavaScript
-- 🎨 **Modern UI/UX** - Gradient effects, shadows, and clean design
+This is a **static single-page portfolio** with anchor-based navigation. It does NOT have:
+- Multiple HTML pages (everything is in `index.html`)
+- Theme toggle (dark theme only)
+- Hamburger menu (simple horizontal nav)
 
-## 🛠️ Technologies Used
+All content is in one place: skills, projects, bio, and contact section.
 
-- **HTML5** - Semantic markup
-- **CSS3** - CSS Variables, Flexbox, Grid, Animations
-- **JavaScript (ES6+)** - Vanilla JS, no frameworks
-- **GitHub Pages** - Static site hosting
+## ✨ What's Actually Here
 
-## 📁 Project Structure
+- 🎯 **Single-page layout** with smooth anchor scrolling
+- 🎨 **Dark theme only** — orange/amber gradient accents on near-black background
+- ⬆️ **Scroll-to-top button** that appears after scrolling
+- ✨ **Scroll-triggered animations** using IntersectionObserver
+- 🖥️ **Terminal aesthetic** in the About section (command-line prompts)
+- ♿ **Basic accessibility** — semantic HTML, ARIA labels where needed
+- ⚡ **No dependencies** — pure vanilla code, fast load
+
+## 🛠️ Tech Stack
+
+- **HTML5** — Semantic markup
+- **CSS3** — CSS Variables, Flexbox, Grid, keyframe animations
+- **JavaScript (ES6+)** — Vanilla JS, IntersectionObserver API
+- **GitHub Pages** — Automatic deployments on push to main
+
+## 📁 File Structure
 
 ```
 .
-├── index.html          # Home page
-├── about.html          # About page
-├── projects.html       # Projects showcase
-├── contact.html        # Contact information
-├── styles.css          # All styles and themes
+├── index.html          # Entire site (single page)
+├── styles.css          # All styles
 ├── script.js           # JavaScript functionality
-├── README.md           # This file
-└── SECURITY.md         # Security policy
+├── favicon.jpg         # Site favicon
+├── CNAME              # Custom domain config
+├── README.md          # This file
+└── SECURITY.md        # Security policy
 ```
 
-## Deployment
+Note: There are NO separate `about.html`, `projects.html`, or `contact.html` files. Those were redirect stubs and have been deleted.
 
-This site is automatically deployed via GitHub Pages:
+## 🚀 Deployment
 
-1. I can push changes to the `main` branch
-2. GitHub Pages automatically builds and deploys
-3. any changes are live within 1-2 minutes at `https://jjaspreetsingh.com`
+GitHub Pages automatic deployment:
 
-## 📱 Features Breakdown
+1. Push to `main` branch
+2. GitHub Actions builds and deploys
+3. Site live at `https://jjaspreetsingh.com` within 1-2 minutes
 
-### Theme Toggle
-- Persists preference in localStorage
-- Respects system preference on first visit
-- Smooth color transitions
+The workflow (`.github/workflows/static.yml`) uploads only necessary files: `index.html`, `styles.css`, `script.js`, `favicon.jpg`, `CNAME`.
 
-### Mobile Navigation
-- Hamburger menu for mobile devices
-- Slide-in animation
-- Auto-closes on outside click
+## 📄 SEO & Metadata
 
-### Animations
-- Fade-in on scroll
-- Smooth hover effects
-- Gradient animations
+The site includes:
+- Meta description for search engines
+- Open Graph tags for social sharing (Twitter/X, LinkedIn)
+- Canonical URL tag
+- Proper page title
 
-### Responsive Design
-- Breakpoint at 768px
-- Mobile-optimized layouts
-- Touch-friendly buttons
+## 🎯 Content Sections
+
+1. **Hero** — Name, title, brief intro, social links
+2. **Skills** — Technology badges (Kali, Burp, Metasploit, Python, etc.)
+3. **Projects** — Three honest entries:
+   - TryHackMe Progress (link to THM profile)
+   - Self-Hosted Lab Infrastructure (Docker, Tailscale, etc.)
+   - Home Lab C2 Setup (Sliver, WireGuard, Uptime Kuma)
+4. **About** — Personal story with terminal prompt UI
+5. **Contact** — GitHub, LinkedIn, X, TryHackMe links
+
+## 🔒 Security
+
+See [SECURITY.md](SECURITY.md) for vulnerability reporting. This site is static and has no backend, so attack surface is minimal.
 
 ## 📝 License
 
-This project is open source and available under the [MIT License](LICENSE).
+This portfolio is personal and not open source. All code is provided as-is for educational purposes. Do not copy without permission.
 
-## 🤝 Contributing
+## 🙏 Credits
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/jjaspreetsingh/jjaspreetsingh.github.io/issues).
-
-## 📧 Contact
-
-Jaspreet Singh
-
-- GitHub: [@jjaspreetsingh](https://github.com/jjaspreetsingh)
-- LinkedIn: [jjaspreetsingh](https://linkedin.com/in/jjaspreetsingh)
-
-## 🙏 Acknowledgments
-
-- Design inspired by modern minimalist portfolios and personal preference of design
-- Icons and emojis for visual enhancement
-- GitHub Pages for free hosting
+- Design: Custom dark theme with orange/amber palette
+- Icons: SVG paths in HTML (GitHub, LinkedIn, X, TryHackMe)
+- Fonts: System fonts with Inter-like stack
+- Hosting: GitHub Pages
 
 ---
 
-⭐ If you find this project helpful, please consider giving it a star!
+Built with care by Jaspreet Singh. No frameworks, no nonsense.
