@@ -14,308 +14,128 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="nav-links">
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#certifications" class="nav-link">Certifications</a>
-                <a href="https://blog.jaspreetsec.com" class="nav-link" target="_blank">Blog</a>
-                <a href="#bio" class="nav-link">About</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </div>
-        </nav>
-    </header>
+    <div class="container">
+        <header>
+            <h1>Jaspreet</h1>
+            <p class="subtitle">Cybersecurity Learner | Aspiring Red Team | Jr. IT Analyst</p>
+        </header>
 
-    <main>
-        <div class="container">
-            <!-- Hero section with prompt line -->
-            <section class="hero">
-                <div class="prompt-line">
-                    <span class="p-user">jaspreet</span><span class="p-at">@</span><span class="p-host">cybersec</span><span class="p-sep">:</span><span class="p-path">~</span><span class="p-sep">$</span>
-                    <span class="p-cmd"> cat about.txt</span>
-                </div>
-                <div class="hero-content animate-hidden">
-                    <h1 class="hero-title">Jaspreet<span class="cursor"></span></h1>
-                    <h2 class="hero-subtitle">
-                        <span class="comment">// </span>
-                        <span class="string">"Cybersecurity Learner | Aspiring Red Team | Jr. IT Analyst"</span>
-                    </h2>
-                    <p class="hero-description">
-                        Self-taught security practitioner who started by cracking games and rooting Android phones via Termux. Now actively practicing on TryHackMe and HackTheBox, working toward eJPT → PNPT → OSCP certification path.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="link-btn"><span class="lbk">[</span>View Projects<span class="lbk">]</span></a>
-                        <a href="#contact" class="link-btn"><span class="lbk">[</span>Get In Touch<span class="lbk">]</span></a>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://github.com/jjaspreetsingh" target="_blank" class="link-btn"><span class="lbk">[</span>GitHub<span class="lbk">]</span></a>
-                        <a href="https://linkedin.com/in/jjaspreetsingh" target="_blank" class="link-btn"><span class="lbk">[</span>LinkedIn<span class="lbk">]</span></a>
-                        <a href="https://x.com/jjaspreetsinghX" target="_blank" class="link-btn"><span class="lbk">[</span>X (Twitter)<span class="lbk">]</span></a>
-                        <a href="https://tryhackme.com/p/jaspreetsec" target="_blank" class="link-btn"><span class="lbk">[</span>TryHackMe<span class="lbk">]</span></a>
-                    </div>
+        <main>
+            <section id="about">
+                <h2>About</h2>
+                <p>I'm Jaspreet, a 22-year-old cybersecurity learner based in Winnipeg, Manitoba. I taught myself computers by cracking games and rooting Android phones using Termux. Now I'm focused on building real security skills through hands-on practice.</p>
+                <p>Current path: eJPT → PNPT → OSCP. I'm building my skills through hands-on practice on TryHackMe and HackTheBox, setting up self-hosted labs, and documenting my journey. My goal is to work as a red team professional, conducting ethical penetration tests and helping organizations improve their security posture.</p>
+            </section>
+
+            <hr>
+
+            <section id="skills">
+                <h2>Skills</h2>
+                <div class="skills-list">
+                    <span class="skill">Kali Linux</span>
+                    <span class="skill">Burp Suite</span>
+                    <span class="skill">Metasploit</span>
+                    <span class="skill">Nmap</span>
+                    <span class="skill">Wireshark</span>
+                    <span class="skill">Python</span>
+                    <span class="skill">Bash</span>
+                    <span class="skill">Shell Scripting</span>
+                    <span class="skill">JavaScript</span>
+                    <span class="skill">Ubuntu</span>
+                    <span class="skill">Network Security</span>
+                    <span class="skill">System Administration</span>
+                    <span class="skill">Docker</span>
+                    <span class="skill">Tailscale</span>
+                    <span class="skill">CTF</span>
+                    <span class="skill">Vulnerability Assessment</span>
+                    <span class="skill">Ethical Hacking</span>
+                    <span class="skill">Android Rooting</span>
                 </div>
             </section>
 
-            <hr class="divider" />
+            <hr>
 
-            <!-- About section -->
-            <section id="bio" class="bio">
-                <div class="section-label"><span class="sl-hash">#</span> ABOUT</div>
-                <div class="bio-content animate-hidden">
-                    <div class="terminal-prompt">
-                        <span class="prompt-symbol">$</span>
-                        <span class="prompt-text">whoami</span>
-                    </div>
-                    <p>I'm Jaspreet, a 22-year-old cybersecurity learner based in Winnipeg, Manitoba. I taught myself computers by cracking games and rooting Android phones using Termux. Now I'm focused on building real security skills through hands-on practice.</p>
+            <section id="projects">
+                <h2>Projects</h2>
 
-                    <div class="terminal-prompt">
-                        <span class="prompt-symbol">$</span>
-                        <span class="prompt-text">ls -la skills/</span>
-                    </div>
-                    <p> Kali Linux • Burp Suite • Metasploit • Nmap • Wireshark • Python • Bash • Docker • VPS Administration • Tailscale • Networking Fundamentals (TCP/IP, DNS, DHCP) • DC204 (Winnipeg DEF CON chapter)</p>
+                <div class="project">
+                    <h3>TryHackMe Learning Path</h3>
+                    <p>Structured cybersecurity education through hands-on virtual labs. Building foundational to intermediate skills across multiple security domains.</p>
+                    <ul class="project-features">
+                        <li>Completed Pre-Security learning path</li>
+                        <li>20+ rooms across Web, Network, OS security</li>
+                        <li>Progressing through Jr Penetration Tester path</li>
+                        <li>Regular CTF practice and vulnerability labs</li>
+                    </ul>
+                    <p><a href="https://tryhackme.com/p/jaspreetsec" target="_blank" class="link">TryHackMe Profile</a></p>
+                </div>
 
-                    <div class="terminal-prompt">
-                        <span class="prompt-symbol">$</span>
-                        <span class="prompt-text">cat goals.txt</span>
-                    </div>
-                    <p>Current path: eJPT → PNPT → OSCP. I'm building my skills through hands-on practice on TryHackMe and HackTheBox, setting up self-hosted labs, and documenting my journey. My goal is to work as a red team professional, conducting ethical penetration tests and helping organizations improve their security posture.</p>
+                <div class="project">
+                    <h3>Self-Hosted Lab Infrastructure</h3>
+                    <p>Built a portable, secure homelab environment for hands-on security practice and tool testing. The lab runs on a VPS and local machines, providing isolated environments for vulnerability research, penetration testing, and security tool experimentation.</p>
+                    <ul class="project-features">
+                        <li>Reduced lab setup time from hours to minutes using Docker Compose orchestration</li>
+                        <li>Established secure remote access via Tailscale mesh network across 3+ devices</li>
+                        <li>Maintained 99% uptime for critical services with automated monitoring</li>
+                        <li>Enabled rapid deployment of new security tools with containerized environments</li>
+                    </ul>
+                </div>
+
+                <div class="project">
+                    <h3>Home Lab C2 Infrastructure</h3>
+                    <p>Designed and deployed a red team command and control (C2) lab for practicing post‑exploitation, lateral movement, and C2 operations in a safe, isolated environment. Repurposed old hardware to create a cost‑effective attack platform.</p>
+                    <ul class="project-features">
+                        <li>Successfully generated and managed 10+ Sliver implants for various operating systems</li>
+                        <li>Established encrypted C2 channels with WireGuard, ensuring secure remote operations</li>
+                        <li>Maintained 100% isolation from production networks, preventing accidental exposure</li>
+                        <li>Documented lab setup and hardening procedures for repeatable deployments</li>
+                    </ul>
                 </div>
             </section>
 
-            <!-- Skills section -->
-            <section id="skills" class="skills">
-                <div class="section-label"><span class="sl-hash">#</span> SKILLS</div>
-                <div class="skills-matrix animate-hidden">
-                    <div class="skill-category">
-                        <h3>Penetration Testing</h3>
-                        <div class="tags">
-                            <span class="tag">Kali Linux</span>
-                            <span class="tag">Burp Suite</span>
-                            <span class="tag">Metasploit</span>
-                            <span class="tag">Nmap</span>
-                            <span class="tag">Wireshark</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Programming & Scripting</h3>
-                        <div class="tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">Bash</span>
-                            <span class="tag">Shell Scripting</span>
-                            <span class="tag">JavaScript</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Systems & Networks</h3>
-                        <div class="tags">
-                            <span class="tag">Ubuntu</span>
-                            <span class="tag">Network Security</span>
-                            <span class="tag">System Administration</span>
-                            <span class="tag">Docker</span>
-                            <span class="tag">Tailscale</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Security Domains</h3>
-                        <div class="tags">
-                            <span class="tag">CTF</span>
-                            <span class="tag">Vulnerability Assessment</span>
-                            <span class="tag">Ethical Hacking</span>
-                            <span class="tag">Android Rooting</span>
-                        </div>
-                    </div>
+            <hr>
+
+            <section id="certifications">
+                <h2>Certifications</h2>
+
+                <div class="certification">
+                    <h3>eJPT (eLearnSecurity Junior Penetration Tester)</h3>
+                    <p class="certification-status">Planned — Q2 2026</p>
+                    <p>Foundational penetration testing certification covering network attacks, web app security, and methodology.</p>
+                </div>
+
+                <div class="certification">
+                    <h3>PNPT (Practical Network Penetration Tester)</h3>
+                    <p class="certification-status">Planned — Q3 2026</p>
+                    <p>Hands‑on certification testing real‑world network penetration skills, including active directory attacks and lateral movement.</p>
+                </div>
+
+                <div class="certification">
+                    <h3>OSCP (Offensive Security Certified Professional)</h3>
+                    <p class="certification-status">Long‑term goal — 2027</p>
+                    <p>Industry‑standard advanced penetration testing certification requiring rigorous practical exam.</p>
                 </div>
             </section>
 
-            <!-- Stats section (optional) -->
-            <section class="stats-section">
-                <div class="section-label"><span class="sl-hash">#</span> STATS</div>
-                <div class="stats">
-                    <div class="stat">
-                        <div class="val">20+</div>
-                        <div class="lbl">rooms solved</div>
-                    </div>
-                    <div class="stat">
-                        <div class="val">#—</div>
-                        <div class="lbl">global rank</div>
-                    </div>
-                    <div class="stat">
-                        <div class="val">10+</div>
-                        <div class="lbl">day streak</div>
-                    </div>
-                    <div class="stat">
-                        <div class="val">2k+</div>
-                        <div class="lbl">points</div>
-                    </div>
-                </div>
-            </section>
+            <hr>
 
-            <!-- Certifications -->
-            <section id="certifications" class="certifications">
-                <div class="section-label"><span class="sl-hash">#</span> CERTS & PATHS</div>
-                <div class="badges">
-                    <div class="badge"><span class="badge-icon">🏆</span><span class="badge-label">Path:</span><span class="badge-val">Pre-Security ✓</span></div>
-                    <div class="badge"><span class="badge-icon">🔥</span><span class="badge-label">Path:</span><span class="badge-val">Jr Penetration Tester ✓</span></div>
-                    <div class="badge"><span class="badge-icon">⚡</span><span class="badge-label">Rank:</span><span class="badge-val">Hacker</span></div>
-                    <div class="badge"><span class="badge-icon">🎯</span><span class="badge-label">Pursuing:</span><span class="badge-val">eJPT → PNPT → OSCP</span></div>
-                </div>
-                <div class="certifications-list animate-hidden">
-                    <div class="certification-item">
-                        <h3>eJPT (eLearnSecurity Junior Penetration Tester)</h3>
-                        <p class="certification-status">Planned — Q2 2026</p>
-                        <p class="certification-desc">Foundational penetration testing certification covering network attacks, web app security, and methodology.</p>
-                    </div>
-                    <div class="certification-item">
-                        <h3>PNPT (Practical Network Penetration Tester)</h3>
-                        <p class="certification-status">Planned — Q3 2026</p>
-                        <p class="certification-desc">Hands‑on certification testing real‑world network penetration skills, including active directory attacks and lateral movement.</p>
-                    </div>
-                    <div class="certification-item">
-                        <h3>OSCP (Offensive Security Certified Professional)</h3>
-                        <p class="certification-status">Long‑term goal — 2027</p>
-                        <p class="certification-desc">Industry‑standard advanced penetration testing certification requiring rigorous practical exam.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Projects -->
-            <section id="projects" class="projects">
-                <div class="section-label"><span class="sl-hash">#</span> PROJECTS</div>
-                <p class="projects-intro">Hands-on security projects demonstrating practical skills. Each project follows the STAR method: Situation, Task, Action, Result.</p>
-                <div class="projects-grid">
-                    <div class="project-card animate-hidden">
-                        <h3>TryHackMe Learning Path</h3>
-                        <div class="project-content">
-                            <div class="project-section">
-                                <h4>Overview</h4>
-                                <p>Structured cybersecurity education through hands-on virtual labs. Building foundational to intermediate skills across multiple security domains.</p>
-                            </div>
-
-                            <div class="project-section">
-                                <h4>Tools Used</h4>
-                                <div class="tech-stack">
-                                    <span class="tech">TryHackMe Platform</span>
-                                    <span class="tech">Kali Linux</span>
-                                    <span class="tech">Nmap</span>
-                                    <span class="tech">Burp Suite</span>
-                                    <span class="tech">Metasploit</span>
-                                </div>
-                            </div>
-
-                            <div class="project-section">
-                                <h4>Outcome</h4>
-                                <ul class="project-features">
-                                    <li>Completed Pre-Security learning path</li>
-                                    <li>20+ rooms across Web, Network, OS security</li>
-                                    <li>Progressing through Jr Penetration Tester path</li>
-                                    <li>Regular CTF practice and vulnerability labs</li>
-                                </ul>
-                            </div>
-
-                            <div class="project-links">
-                                <a href="https://tryhackme.com/p/jaspreetsec" target="_blank" class="link-btn">
-                                    🎯 TryHackMe Profile
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card animate-hidden">
-                        <h3>Self-Hosted Lab Infrastructure</h3>
-                        <div class="project-content">
-                            <div class="project-section">
-                                <h4>Overview</h4>
-                                <p>Built a portable, secure homelab environment for hands-on security practice and tool testing. The lab runs on a VPS and local machines, providing isolated environments for vulnerability research, penetration testing, and security tool experimentation.</p>
-                            </div>
-
-                            <div class="project-section">
-                                <h4>Tools Used</h4>
-                                <div class="tech-stack">
-                                    <span class="tech">Docker Compose</span>
-                                    <span class="tech">Tailscale</span>
-                                    <span class="tech">Ubuntu VPS</span>
-                                    <span class="tech">Open WebUI</span>
-                                    <span class="tech">OpenRouter</span>
-                                    <span class="tech">Uptime Kuma</span>
-                                </div>
-                            </div>
-
-                            <div class="project-section">
-                                <h4>Outcome</h4>
-                                <ul class="project-features">
-                                    <li>Reduced lab setup time from hours to minutes using Docker Compose orchestration</li>
-                                    <li>Established secure remote access via Tailscale mesh network across 3+ devices</li>
-                                    <li>Maintained 99% uptime for critical services with automated monitoring</li>
-                                    <li>Enabled rapid deployment of new security tools with containerized environments</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card animate-hidden">
-                        <h3>Home Lab C2 Infrastructure</h3>
-                        <div class="project-content">
-                            <div class="project-section">
-                                <h4>Overview</h4>
-                                <p>Designed and deployed a red team command and control (C2) lab for practicing post‑exploitation, lateral movement, and C2 operations in a safe, isolated environment. Repurposed old hardware to create a cost‑effective attack platform.</p>
-                            </div>
-
-                            <div class="project-section">
-                                <h4>Tools Used</h4>
-                                <div class="tech-stack">
-                                    <span class="tech">Sliver C2</span>
-                                    <span class="tech">WireGuard VPN</span>
-                                    <span class="tech">Kali Linux</span>
-                                    <span class="tech">Uptime Kuma</span>
-                                    <span class="tech">Isolated Network</span>
-                                </div>
-                            </div>
-
-                            <div class="project-section">
-                                <h4>Outcome</h4>
-                                <ul class="project-features">
-                                    <li>Successfully generated and managed 10+ Sliver implants for various operating systems</li>
-                                    <li>Established encrypted C2 channels with WireGuard, ensuring secure remote operations</li>
-                                    <li>Maintained 100% isolation from production networks, preventing accidental exposure</li>
-                                    <li>Documented lab setup and hardening procedures for repeatable deployments</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Contact -->
-            <section id="contact" class="contact">
-                <div class="section-label"><span class="sl-hash">#</span> FIND ME</div>
+            <section id="contact">
+                <h2>Find Me</h2>
                 <div class="links">
-                    <a href="https://github.com/jjaspreetsingh" target="_blank" class="link-btn"><span class="lbk">[</span>GitHub<span class="lbk">]</span></a>
-                    <a href="https://linkedin.com/in/jjaspreetsingh" target="_blank" class="link-btn"><span class="lbk">[</span>LinkedIn<span class="lbk">]</span></a>
-                    <a href="https://x.com/jjaspreetsinghX" target="_blank" class="link-btn"><span class="lbk">[</span>X (Twitter)<span class="lbk">]</span></a>
-                    <a href="https://tryhackme.com/p/jaspreetsec" target="_blank" class="link-btn"><span class="lbk">[</span>TryHackMe<span class="lbk">]</span></a>
-                    <a href="mailto:jaspreet@example.com" class="link-btn"><span class="lbk">[</span>Email<span class="lbk">]</span></a>
+                    <a href="https://github.com/jjaspreetsingh" target="_blank" class="link">GitHub</a>
+                    <a href="https://linkedin.com/in/jjaspreetsingh" target="_blank" class="link">LinkedIn</a>
+                    <a href="https://x.com/jjaspreetsinghX" target="_blank" class="link">X (Twitter)</a>
+                    <a href="https://tryhackme.com/p/jaspreetsec" target="_blank" class="link">TryHackMe</a>
+                    <a href="mailto:jaspreet@example.com" class="link">Email</a>
                 </div>
             </section>
-        </div> <!-- /container -->
-    </main>
+        </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Jaspreet. All rights reserved. Built with &lt;/&gt; and too many late nights.</p>
-        </div>
-    </footer>
-
-    <button id="scroll-top" aria-label="Scroll to top">↑</button>
+        <footer>
+            <p>&copy; 2026 Jaspreet. All rights reserved.</p>
+        </footer>
+    </div>
 
     <script src="script.js"></script>
-    <noscript>
-        <style>
-            .animate-hidden {
-                opacity: 1 !important;
-                transform: none !important;
-            }
-        </style>
-    </noscript>
 </body>
 </html>
