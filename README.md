@@ -1,8 +1,8 @@
-# Jaspreet Singh — Cybersecurity Portfolio
+# Jaspreet — Cybersecurity Portfolio
 
-Single-page portfolio website for cybersecurity professional Jaspreet Singh. Built with vanilla HTML, CSS, and JavaScript. Deployed via GitHub Pages.
+Single-page portfolio website for cybersecurity professional Jaspreet. Built with vanilla HTML, CSS, and JavaScript. Deployed via GitHub Pages.
 
-🌐 **Live Site**: [https://jjaspreetsingh.com](https://jjaspreetsingh.com)
+🌐 **Live Site**: [https://jaspreetsec.com](https://jaspreetsec.com)
 
 ## About This Site
 
@@ -51,7 +51,7 @@ GitHub Pages automatic deployment:
 
 1. Push to `main` branch
 2. GitHub Actions builds and deploys
-3. Site live at `https://jjaspreetsingh.com` within 1-2 minutes
+3. Site live at `https://jaspreetsec.com` within 1-2 minutes
 
 The workflow (`.github/workflows/static.yml`) uploads only necessary files: `index.html`, `styles.css`, `script.js`, `favicon.jpg`, `CNAME`.
 
@@ -91,4 +91,4 @@ This portfolio is personal and not open source. All code is provided as-is for e
 
 ---
 
-Built with care by Jaspreet Singh. No frameworks, no nonsense.
+Built with care by Jaspreet. No frameworks, no nonsense.
