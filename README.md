@@ -1,4 +1,4 @@
-# 0xjaspreet — Cybersecurity Portfolio
+# jaspreet — Cybersecurity Portfolio
 
 A high-performance, single-page portfolio for **Jaspreet Singh**, an offensive security practitioner. Built with a minimalist "Terminal Green" aesthetic using vanilla HTML, CSS, and JavaScript.
 
