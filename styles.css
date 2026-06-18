@@ -1,22 +1,20 @@
 /* Hacker Terminal - Green & Black Theme */
 :root {
-  --bg-color: #0a0a0a;           /* Deep black background */
-  --card-bg: #121212;           /* Slightly lighter black for cards */
-  --terminal-green: #00ff41;    /* Classic matrix green */
-  --dim-green: #008f11;         /* Muted green for secondary text */
-  --dark-green: #003b00;        /* Dark green for borders and accents */
-  --text-main: #e0e0e0;         /* Off-white/light grey for body text readability */
-  --border-color: #1a1a1a;      /* Subtle border color */
+  --bg-color: #0a0a0a;
+  --card-bg: #121212;
+  --terminal-green: #00ff41;
+  --dim-green: #008f11;
+  --dark-green: #003b00;
+  --text-main: #e0e0e0;
+  --border-color: #1a1a1a;
+  --text-dim: #b0b0b0;
+  --text-muted: #999;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
 html, body {
-  font-family: 'Input Mono', 'Menlo', 'Monaco', 'Courier New', monospace; /* Monospace font for the tech feel */
+  font-family: 'Input Mono', 'Menlo', 'Monaco', 'Courier New', monospace;
   background-color: var(--bg-color);
   color: var(--text-main);
   line-height: 1.6;
@@ -32,17 +30,13 @@ body {
   padding: 2rem 1rem;
 }
 
-.container {
-  max-width: 700px;
-  width: 100%;
-  margin: 0 auto;
-}
+.container { max-width: 720px; width: 100%; margin: 0 auto; }
 
-/* Header */
+/* ===== Header ===== */
 header {
   width: 100%;
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
   padding-top: 2rem;
 }
 
@@ -52,32 +46,26 @@ h1 {
   letter-spacing: -1px;
   margin-bottom: 0.5rem;
   color: var(--terminal-green);
-  text-transform: lowercase;
-}
-
-h1::before {
-  content: "> "; /* Terminal prompt style */
-  color: var(--dim-green);
 }
 
 .subtitle {
   font-size: 1rem;
   color: var(--dim-green);
   font-weight: 400;
-  margin-bottom: 2rem;
+  margin-bottom: 0.25rem;
 }
 
-/* Main content */
-main {
-  width: 100%;
+.location {
+  font-size: 0.85rem;
+  color: var(--text-muted);
 }
 
-section {
-  margin-bottom: 3rem;
-}
+/* ===== Sections ===== */
+main { width: 100%; }
+section { margin-bottom: 3rem; }
 
 h2 {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
   color: var(--terminal-green);
@@ -87,101 +75,151 @@ h2 {
   letter-spacing: 2px;
 }
 
-p {
-  margin-bottom: 1.5rem;
-  line-height: 1.7;
-  color: #b0b0b0;
-}
+h3 { font-size: 1.05rem; font-weight: 600; margin-bottom: 0.5rem; color: var(--terminal-green); }
+h4 { font-size: 0.9rem; font-weight: 600; margin-bottom: 0.5rem; color: var(--dim-green); }
 
-/* Skills */
-.skills-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-bottom: 1.5rem;
-}
+p { margin-bottom: 1.25rem; line-height: 1.7; color: var(--text-dim); }
+p strong { color: var(--text-main); }
 
-.skill {
+ul { margin: 0.75rem 0 1rem 1.25rem; }
+li { padding: 0.25rem 0; color: var(--text-dim); font-size: 0.92rem; line-height: 1.5; }
+
+/* ===== Education ===== */
+.edu-item { margin-bottom: 1.75rem; }
+.edu-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.25rem; }
+.edu-header h3 { margin-bottom: 0; }
+.edu-subtitle { font-size: 0.85rem; color: var(--dim-green); margin-bottom: 0.5rem; }
+
+.edu-status {
+  font-size: 0.78rem;
+  padding: 0.15rem 0.6rem;
+  border-radius: 2px;
+  font-family: monospace;
+  white-space: nowrap;
+}
+.edu-status.active     { background: #0a2a0a; color: var(--terminal-green); border: 1px solid var(--dim-green); }
+.edu-status.in-progress { background: #1a1a0a; color: #d29922; border: 1px solid #d29922; }
+.edu-status.completed  { background: #0a0a1a; color: #58a6ff; border: 1px solid #58a6ff; }
+
+/* ===== Skills ===== */
+.skill-category { margin-bottom: 1.25rem; }
+.skill-category h4 { text-transform: uppercase; font-size: 0.78rem; letter-spacing: 1px; margin-bottom: 0.5rem; }
+
+.skills-row { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+
+.skill-tag {
   background: var(--card-bg);
   border: 1px solid var(--dark-green);
-  padding: 0.4rem 0.8rem;
+  padding: 0.3rem 0.7rem;
   border-radius: 2px;
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   color: var(--terminal-green);
   transition: all 0.3s ease;
 }
+.skill-tag:hover { background: var(--dark-green); color: #fff; }
 
-.skill:hover {
-  background: var(--dark-green);
-  color: #fff;
-}
-
-/* Projects & Certs */
-.project, .certification {
+/* ===== Projects ===== */
+.project {
   background: var(--card-bg);
   border: 1px solid var(--border-color);
   border-radius: 4px;
   padding: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
   transition: border 0.3s ease;
 }
+.project:hover { border-color: var(--dim-green); }
+.project h3 { margin-bottom: 0.5rem; }
+.project p { font-size: 0.92rem; }
 
-.project:hover, .certification:hover {
-  border-color: var(--dim-green);
-}
+.project-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 1rem; }
 
-.project h3, .certification h3 {
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin-bottom: 0.75rem;
-  color: var(--terminal-green);
-}
-
-.project-features li {
-  padding: 0.25rem 0;
-  padding-left: 1.25rem;
-  position: relative;
-  color: #999;
-}
-
-.project-features li:before {
-  content: "»";
-  position: absolute;
-  left: 0;
-  color: var(--terminal-green);
-}
-
-.certification-status {
-  font-size: 0.85rem;
+.tag {
+  font-size: 0.72rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 2px;
+  background: rgba(0, 255, 65, 0.08);
   color: var(--dim-green);
-  margin-bottom: 0.75rem;
+  border: 1px solid rgba(0, 255, 65, 0.15);
+}
+
+/* ===== Roadmap ===== */
+.roadmap { margin-bottom: 1rem; }
+
+.roadmap-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.roadmap-item::before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 16px;
+  bottom: -1.25rem;
+  width: 1px;
+  background: var(--dark-green);
+}
+.roadmap-item:last-child::before { display: none; }
+
+.roadmap-marker {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  border: 2px solid var(--dark-green);
+  flex-shrink: 0;
+  margin-top: 5px;
+  position: relative;
+  z-index: 1;
+}
+.roadmap-marker.active { background: var(--terminal-green); border-color: var(--terminal-green); }
+
+.roadmap-content { flex: 1; min-width: 0; }
+.roadmap-content h4 { margin-bottom: 0.15rem; font-size: 0.95rem; }
+.roadmap-content p { font-size: 0.85rem; margin-bottom: 0; }
+
+.roadmap-status {
+  display: inline-block;
+  font-size: 0.72rem;
+  color: var(--dim-green);
+  margin-bottom: 0.35rem;
   font-family: monospace;
 }
 
-/* Links */
-.links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
+/* ===== Connect ===== */
+.connect-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.75rem; }
 
+.connect-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.85rem 1rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  text-decoration: none;
+  color: var(--text-main);
+  transition: all 0.3s ease;
+}
+.connect-link:hover { border-color: var(--terminal-green); background: rgba(0, 255, 65, 0.03); }
+
+.connect-icon { font-size: 1.1rem; color: var(--terminal-green); flex-shrink: 0; }
+.connect-link span:nth-child(2) { font-weight: 600; font-size: 0.9rem; }
+.connect-handle { margin-left: auto; font-size: 0.78rem; color: var(--text-muted); font-family: monospace; }
+
+/* ===== Links (inline) ===== */
 .link {
   color: var(--terminal-green);
   text-decoration: none;
-  font-size: 0.9rem;
   font-weight: bold;
   transition: opacity 0.2s ease;
 }
+.link:hover { text-decoration: underline; opacity: 0.8; }
 
-.link:hover {
-  text-decoration: underline;
-  opacity: 0.8;
-}
-
-/* Footer */
+/* ===== Footer ===== */
 footer {
-  margin-top: 4rem;
+  margin-top: 3rem;
   padding-top: 2rem;
   border-top: 1px solid var(--dark-green);
   text-align: center;
@@ -191,7 +229,7 @@ footer {
   font-family: monospace;
 }
 
-/* Divider */
+/* ===== Divider ===== */
 hr {
   border: none;
   border-top: 1px solid var(--dark-green);
@@ -199,9 +237,10 @@ hr {
   width: 100%;
 }
 
-/* Responsive */
+/* ===== Responsive ===== */
 @media (max-width: 768px) {
   h1 { font-size: 2rem; }
   .container { padding: 0 0.5rem; }
+  .edu-header { flex-direction: column; gap: 0.25rem; }
+  .connect-grid { grid-template-columns: 1fr; }
 }
-/* Built with .nojekyll */
